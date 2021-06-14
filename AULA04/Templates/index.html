@@ -1,0 +1,24 @@
+<!--Aula 04 - Codelab-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blueedtech</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/static/estilo.css">
+    </head>
+    <body>
+        <div class="titulo">
+            <a href="http://blueedtech.com.br">
+                <img src="{{imagem}}" width="100" alt="Logo da Blue" />
+            </a><h1>Blueedtech</h1>
+        </div>
+        <br /><br />
+        <p>Olá {{nome}} você tem {{idade}} anos e vem de {{cidade}}.</p>
+        
+        {% if maiordeidade %}
+        <p>VOCÉ É MAIOR DE IDADE!</p>
+        {% else %}
+        <p>VOCE É MENOR DE IDADE!</p>
+        {% endif %}
+    </body>
+</html>
