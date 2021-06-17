@@ -1,0 +1,47 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.conteudo{
+    background-color:#3359EC;
+    color: white;
+    padding: 10px;
+}
+.titulo-turma{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.conteudo-turma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: black;
+}
+.agenda{
+    background-color:#FFE921;
+    flex-grow: 1;
+}
+.lista{
+    background-color:#FF58F0;
+    flex-grow: 1;
+}
+.conteudo-turma-item{
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+}
+.lista table th, td{
+    border: 1px black solid;
+    padding: 10px;
+    width: 100%
+}
