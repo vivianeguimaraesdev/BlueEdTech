@@ -12,16 +12,24 @@
         <font color="red">Super Mario</font>
     </h1>
     <!--Por padrão as imagens  em links aparecem lado a lado (inline)-->
-    <div style="background-color: red;">
+    <div style="background-color: indigo; max-width: 300px; height: 300px;">
+        <marquee scrollDelay="0" scrollamount="40" direction="right">
         <img src="./mario.gif" width="100px"/>
+    </marquee>
     </div>
     <div style="background-color: blue;">
+        <marquee scrollDelay="200" direction="left">
         <img src="./luigi.gif" width="42px"/>
+    </marquee>
     </div>
     <!--A div por padrão fica uma embaixo da outra-->
     <!--A div ocupa  largura toda-->
     <div style="background-color:  yellow;">Personagem 3</div>
     <div style="background-color: green;"> Personagem 4</div>
     <!--As duas divs vazias não aparecem nada porque por padrão são tags vazias, precisam conteúdo-->
+<!--O elemento html <marquee> é usado para inserir
+uma área de rolagem de texto"scrolling",similar a um letreiro. 
+Você pode controlar o comportamento do conteúdo fornecendo alguns 
+atributos extras.-->
 </body>
 </html>
