@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre séries</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Pesquisa sobre séries</h1>
+
+        <p id="description">
+            Esta é uma pesquisa para saber quais foram as séries mais assistidas 
+            durante a quarentena.
+        </p>
+
+        <form id="survey">
+            <label id="name-label" for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite o seu nome" required/>
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu email" required/>
+
+            <label id="number-label" for="number">Idade</label>
+            <input type="number" id="number" name="number" placeholder="Digite a sua idade" min="18" max="120" required/>
+
+            <label id="drop-label" for="dropdown">Qual o seu gênero favorito</label>
+            <select name="genre" id="dropdown">
+                <option disabled selected value> - </option>
+                <option value="terror">Terror</option>
+                <option value="sitcom">Sitcom</option>
+                <option value="anime">Anime</option>
+                <option value="distopico">Distópico</option>
+                <option value="musical">Musical</option>
+                <option value="medico">Medico</option>
+                <option value="misterio">Misterio</option>
+                <option value="drama">Drama</option>
+            </select>
+
+            <div class="radioButtons">
+                <p>Qual é a melhor hora de assistir uma série?</p>
+
+                <input name="time" value="manha" type="radio"/>
+                <label>Manhã</label>
+
+                <input name="time" value="tarde" type="radio" />
+                <label>Tarde</label>
+
+                <input name="time" value="noite" type="radio" />
+                <label>Noite</label>
+            </div>            
+            <div class="checkButtons">
+                <p>Séries assistidas</p>
+                <label>
+                    <input name="favorito" value="greysanatomy" type="checkbox"/>
+                    Greys Anatomy
+                </label>
+                <label>
+                    <input name="favorito" value="sombraseossos" type="checkbox"/>
+                    Sombras e Ossos
+                </label>
+                <label>
+                    <input name="favorito" value="thelastkingdom" type="checkbox"/>
+                    The Last Kingdom
+                </label>
+                <label>
+                    <input name="favorito" value="jackryan" type="checkbox"/>
+                    Jack Ryan
+                </label>
+                <label>
+                    <input name="favorito" value="killingeve" type="checkbox"/>
+                   Killing Eve
+                </label>
+                <label>
+                    <input name="favorito" value="castlevania" type="checkbox"/>
+                    Castlevania
+                </label>
+                <label>
+                    <input name="favorito" value="amaldicaodaresidenciahill" type="checkbox"/>
+                    A Maldição da Residência Hill
+                </label>
+                </div>
+
+                <div class="textArea">
+                    <p>Outras séries</p>
+                    <textarea id="another-series" name="another-series" 
+                    placeholder="Digite o nome de outras séries que você assistiu"></textarea>
+                </div>
+
+                <button type="submit" id="botao">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
