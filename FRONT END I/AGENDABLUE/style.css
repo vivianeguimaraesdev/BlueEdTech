@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    width: 90%;
+}
+
+
+header{
+    display: flex;
+    /*Alinha em X */
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    /*Alinha em Y, precisa ter uma altura*/
+    /* align-items: center;    */ 
+}
+
+ /* Pra usar o align items
+ Você tem que ter uma altura
+ No elemento pai
+ Se não o elemento filho vai ser alinhado em Y */
+
+ /* VH -> em relação a toda página
+ % -> em relação ao elemento que ele pertence */
+
+img{
+    width: 160px;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: #3652e4
+    ;
+}
+
+h2{
+    text-align: center;
+    color:#3652e4;
+   
+}
+
+.quadro { 
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3rem;
+}
+
+.agenda{
+    background-color: #3652e4;
+    color: white;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*O flex direction inverteu e por isso funcionou sem altura*/
+    flex-direction: column; /*inverte os elementos Y*/
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+}
+
+.agenda:hover{
+    background-color: #566feb;
+}
+
+
+.presenca{
+    background-color: #3652e4;
+    color:#3652e4;
+    width: 600px;
+    border-radius: 10px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding-bottom: 1.5rem;
+}
+
+.presenca:hover{
+    background-color: #566feb;
+}
+h3{
+    color:white;
+    padding: 10px;
+}
+table{
+    width: 90%;
+    background-color: white;
+    border-collapse:collapse;   
+}
+
+tr {
+    border: 4px solid #3652e4;
+}
+
+td, th{
+    padding: 0.4rem 0;
+    text-align: center;
+}
+
