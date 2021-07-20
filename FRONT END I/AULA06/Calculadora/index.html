@@ -29,41 +29,41 @@
 
         <div class="buttons">
           <div class="row">
-            <button id="seven" onclick="digitarSete()">7</button>
-            <button id="eight" onclick="digitarOito()">8</button>
-            <button id="nine" onclick="digitarNove()">9</button>
-            <button id="divide" onclick="digitarDivisao()">÷</button>
-            <button id="back">↩</button>
-            <button id="clear">C</button>
+            <button id="seven" onclick="typeSeven()">7</button>
+            <button id="eight" onclick="typeEight()">8</button>
+            <button id="nine" onclick="typeNine()">9</button>
+            <button id="divide" onclick="typeDivide()">÷</button>
+            <button id="back" onclick="erase()">↩</button>
+            <button id="clear" onclick="clearDisplay()">C</button>
           </div>
           <div class="row">
-            <button id="four" onclick="digitarQuatro()">4</button>
-            <button id="five" onclick="digitarCinco()">5</button>
-            <button id="six" onclick="digitarSeis()">6</button>
-            <button id="plus" onclick="digitarMultiplicacao()">x</button>
-            <button id="left">(</button>
-            <button id="right">)</button>
+            <button id="four" onclick="typeFour()">4</button>
+            <button id="five" onclick="typeFive()">5</button>
+            <button id="six" onclick="typeSix()">6</button>
+            <button id="plus" onclick="typePlus()">x</button>
+            <button id="left" onclick="typeLeftPar()">(</button>
+            <button id="right" onclick="typeRightPar()">)</button>
           </div>
           <div class="row">
-            <button id="one" onclick="digitarUm()">1</button>
-            <button id="two" onclick="digitarDois()">2</button>
-            <button id="three" onclick="digitarTrês()">3</button>
-            <button id="minus">-</button>
-            <button id="pow">x²</button>
-            <button id="sqrt">√</button>
+            <button id="one" onclick="typeOne()">1</button>
+            <button id="two" onclick="typeTwo()">2</button>
+            <button id="three" onclick="typeThree()">3</button>
+            <button id="minus" onclick="typeMinus()">-</button>
+            <button id="pow" onclick="typePow()">x²</button>
+            <button id="sqrt" onclick="typeSqrt()">√</button>
           </div>
           <div class="row">
-            <button id="zero" onclick="digitarZero()">0</button>
-            <button id="point">.</button>
-            <button id="percent">%</button>
-            <button id="sum" onclick="digitarSoma()">+</button>
-            <button id="equals">=</button>
+            <button id="zero" onclick="typeZero()">0</button>
+            <button id="point" onclick="typePoint()">.</button>
+            <button id="percent" onclick="typePercent()">%</button>
+            <button id="sum" onclick="typeSum()">+</button>
+            <button id="equals" onclick="calculate()">=</button>
           </div>
           </div>
         </div>
 
       </main>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
