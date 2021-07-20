@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gnome Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" />
+  </head>
+  <body>
+    <div class="container">
+
+      <main class="calculator">
+
+        <div class="topbar">
+          <span>Gnome Calculator</span>
+          <div class="icons">
+            <div class="minimize"></div>
+            <div class="expand"></div>
+            <div class="close"></div>
+          </div>
+        </div>
+        
+        <div class="display">
+          <input id="display-screen" type="text" value=0 readonly />
+        </div>
+
+        <div class="buttons">
+          <div class="row">
+            <button id="seven" onclick="digitarSete()">7</button>
+            <button id="eight" onclick="digitarOito()">8</button>
+            <button id="nine" onclick="digitarNove()">9</button>
+            <button id="divide" onclick="digitarDivisao()">÷</button>
+            <button id="back">↩</button>
+            <button id="clear">C</button>
+          </div>
+          <div class="row">
+            <button id="four" onclick="digitarQuatro()">4</button>
+            <button id="five" onclick="digitarCinco()">5</button>
+            <button id="six" onclick="digitarSeis()">6</button>
+            <button id="plus" onclick="digitarMultiplicacao()">x</button>
+            <button id="left">(</button>
+            <button id="right">)</button>
+          </div>
+          <div class="row">
+            <button id="one" onclick="digitarUm()">1</button>
+            <button id="two" onclick="digitarDois()">2</button>
+            <button id="three" onclick="digitarTrês()">3</button>
+            <button id="minus">-</button>
+            <button id="pow">x²</button>
+            <button id="sqrt">√</button>
+          </div>
+          <div class="row">
+            <button id="zero" onclick="digitarZero()">0</button>
+            <button id="point">.</button>
+            <button id="percent">%</button>
+            <button id="sum" onclick="digitarSoma()">+</button>
+            <button id="equals">=</button>
+          </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
